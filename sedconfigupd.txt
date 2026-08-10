@@ -1662,6 +1662,9 @@ end
 local dashAnimLeft = Instance.new("Animation")
 dashAnimLeft.AnimationId = "rbxassetid://75203303352791"
 
+local dashAnimRight = Instance.new("Animation")
+dashAnimRight.AnimationId = "rbxassetid://117223862448096"
+
 -- Ensure the state exists and defaults to true
 if _G.BlockBreakState.AutoM1 == nil then _G.BlockBreakState.AutoM1 = false end
 
@@ -1947,8 +1950,7 @@ end
 
 
 
-local dashAnimRight = Instance.new("Animation")
-dashAnimRight.AnimationId = "rbxassetid://117223862448096"
+
 
 local function FireDashPunishM1()
     local c = workspace:FindFirstChild("Characters") and workspace.Characters:FindFirstChild(LocalPlayer.Name) or LocalPlayer.Character
